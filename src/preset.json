@@ -351,9 +351,9 @@
                         },
                         {
                             "id": 256,
-                            "name": "ChatGPT",
-                            "url": "https://chatgpt.com/",
-                            "favicon": "https://cdn.oaistatic.com/assets/favicon-32x32-p4ktpm1x.webp",
+                            "name": "Vue",
+                            "url": "https://play.vuejs.org/",
+                            "favicon": " https://play.vuejs.org/logo.svg",
                             "bgColor": "#0f1139"
                         },
                         {
