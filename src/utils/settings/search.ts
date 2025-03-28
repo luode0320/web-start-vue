@@ -33,5 +33,5 @@ export const search = new SettingItem({
   name: '搜索引擎',
   enName: 'Search',
   children: searchList,
-  defaultKey: 'Bing',
+  defaultKey: 'Google',
 })
