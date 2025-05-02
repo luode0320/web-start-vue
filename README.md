@@ -33,10 +33,14 @@ docker pull luode0320/web-start:latest
 启动:
 
 ```shell
-docker run -d -p 2000:2000 luode0320/web-start:latest
+docker run -d \
+--restart=always \
+--name web  \
+-p 2000:2000 \
+luode0320/web-start:latest
 ```
 
-挂载配置:
+挂载配置(要先准备好配置文件):
 ```shell
 docker run -d \
 --restart=always \
