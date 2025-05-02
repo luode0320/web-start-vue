@@ -38,4 +38,5 @@ jobs:
             --restart=always \
             --name web \
             -p 2000:2000 \
+            -v /usr/local/src/web/preset.json:/app/src/preset.json \
             luode0320/web-start:latest
