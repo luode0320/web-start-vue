@@ -27,7 +27,7 @@ jobs:
 
         uses: appleboy/ssh-action@master # 通过SSH登录到远程服务器
         with: # 配置actions/setup-node@v1的一些属性
-          host: 119.8.185.250
+          host: 192.238.204.29
           username: root
           password: ${{ secrets.REMOTE_PASSWORD }}
           port: 22
