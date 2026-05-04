@@ -35,8 +35,8 @@ jobs:
             docker rm -f web
             docker rmi luode0320/web-start:latest
             docker run -d \
-              --restart=always \
-              --name web \
-              -p 2000:2000 \
-              luode0320/web-start:latest \
-              vite preview --port 2000 --host 0.0.0.0
+            --network host \
+            --restart=always \
+            --name web \
+            -p 2000:2000 \
+            luode0320/web-start:latest
