@@ -9,13 +9,6 @@
                     "name": "常用",
                     "siteList": [
                         {
-                            "id": 1730221198177,
-                            "name": "ChatGPT",
-                            "url": "https://chatgpt.com/",
-                            "favicon": "https://cdn.oaistatic.com/assets/favicon-32x32-p4ktpm1x.webp",
-                            "bgColor": "#73272d"
-                        },
-                        {
                             "id": 10,
                             "name": "豆包",
                             "url": "https://www.doubao.com/chat/",
@@ -42,6 +35,13 @@
                             "url": "https://wange.luode.vip/",
                             "favicon": "https://cdn.investing.com/crypto-logos/20x20/v2/bnb.png",
                             "bgColor": "#1d3014"
+                        },
+                        {
+                            "id": 1730221198177,
+                            "name": "做空山寨",
+                            "url": "https://sz.luode.vip/admin",
+                            "favicon": "https://sz.luode.vip/admin/favicon.svg",
+                            "bgColor": "#73272d"
                         }
                     ]
                 },
