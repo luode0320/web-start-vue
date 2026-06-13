@@ -17,16 +17,17 @@ jobs:
   docker:
     runs-on: ubuntu-latest
     env:
+      PROJECT_SLUG: web-start
+      IMAGE_NAMESPACE: luode0320
+      REMOTE_BASE_DIR: /usr/local/src
       TARGET_OS: linux
       TARGET_ARCH: amd64
-      IMAGE: luode0320/web-start:latest
-      IMAGE_TAR: web-start.tar
-      BUILDER_NAME: web-start-builder
-      CONTAINER: web
-      APP_DIR: /usr/local/src/web-start
+      # 留空时默认复用 PROJECT_SLUG；只有容器名想单独区分时才需要覆盖。
+      CONTAINER: ''
       REMOTE_USER: root
       REMOTE_PORT: 22
       # 这里保留原始 docker run 参数写法，后续项目直接改这一段即可。
+      # 其中 ${CONTAINER} 会在部署脚本里按“显式配置优先，否则回退 PROJECT_SLUG”解析。
       DOCKER_RUN_ARGS: |
         -d \
         --network host \
@@ -46,10 +47,23 @@ jobs:
         run: |
           set -euo pipefail
 
-          # 1. buildx builder 名称也走 env 配置，避免跨项目复用时残留固定命名。
+          # 1. 以项目名为基准派生镜像名、tar 包名、builder 名和远程目录，减少重复前缀配置。
+          IMAGE="${IMAGE_NAMESPACE}/${PROJECT_SLUG}:latest"
+          IMAGE_TAR="${PROJECT_SLUG}.tar"
+          BUILDER_NAME="${PROJECT_SLUG}-builder"
+          APP_DIR="${REMOTE_BASE_DIR}/${PROJECT_SLUG}"
+
+          {
+            echo "IMAGE=${IMAGE}"
+            echo "IMAGE_TAR=${IMAGE_TAR}"
+            echo "BUILDER_NAME=${BUILDER_NAME}"
+            echo "APP_DIR=${APP_DIR}"
+          } >> "${GITHUB_ENV}"
+
+          # 2. buildx builder 名称由项目名派生，避免跨项目复用时残留固定命名。
           docker buildx create --use --name "${BUILDER_NAME}"
           docker buildx inspect --bootstrap
-          # 2. 镜像平台、镜像名和 tar 名都从 env 中读取，确保构建参数可复用。
+          # 3. 镜像平台、镜像名和 tar 名都从项目派生结果中读取，确保构建参数可复用。
           docker buildx build \
             --platform "${TARGET_OS}/${TARGET_ARCH}" \
             --output "type=docker,dest=${IMAGE_TAR}" \
@@ -62,8 +76,8 @@ jobs:
           username: ${{ env.REMOTE_USER }}
           password: ${{ secrets.REMOTE_PASSWORD }}
           port: ${{ env.REMOTE_PORT }}
-          source: ${{ env.IMAGE_TAR }}
-          target: ${{ env.APP_DIR }}
+          source: ${{ env.PROJECT_SLUG }}.tar
+          target: ${{ env.REMOTE_BASE_DIR }}/${{ env.PROJECT_SLUG }}
 
       - name: 登录服务器并部署
         uses: appleboy/ssh-action@master
@@ -73,12 +87,18 @@ jobs:
           password: ${{ secrets.REMOTE_PASSWORD }}
           port: ${{ env.REMOTE_PORT }}
           script: |
-            # 1. 先加载 workflow env 中的动态配置，确保后续项目只改 env 区域即可复用部署流程。
+            # 1. 先按项目名派生镜像、tar 包和远程目录，确保相似前缀只维护一份。
             set -euo pipefail
-            APP_DIR="${{ env.APP_DIR }}"
-            IMAGE="${{ env.IMAGE }}"
-            IMAGE_TAR="${{ env.IMAGE_TAR }}"
+            PROJECT_SLUG="${{ env.PROJECT_SLUG }}"
+            IMAGE_NAMESPACE="${{ env.IMAGE_NAMESPACE }}"
+            REMOTE_BASE_DIR="${{ env.REMOTE_BASE_DIR }}"
+            APP_DIR="${REMOTE_BASE_DIR}/${PROJECT_SLUG}"
+            IMAGE="${IMAGE_NAMESPACE}/${PROJECT_SLUG}:latest"
+            IMAGE_TAR="${PROJECT_SLUG}.tar"
             CONTAINER="${{ env.CONTAINER }}"
+            if [ -z "${CONTAINER}" ]; then
+              CONTAINER="${PROJECT_SLUG}"
+            fi
             DOCKER_RUN_ARGS=$(cat <<'EOF'
             ${{ env.DOCKER_RUN_ARGS }}
             EOF
