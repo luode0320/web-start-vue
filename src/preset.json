@@ -57,13 +57,6 @@
                             "bgColor": ""
                         },
                         {
-                            "id": 66,
-                            "name": "codex中转",
-                            "url": "https://code.oai1.online/register?aff=0eXc",
-                            "favicon": " https://code.oai1.online/logo.png",
-                            "bgColor": "#7a6128"
-                        },
-                        {
                             "id": 32,
                             "name": "Docker",
                             "url": "https://hub.docker.com/u/luode0320",
@@ -71,10 +64,17 @@
                             "bgColor": "#4901f4"
                         },
                         {
+                            "id": 66,
+                            "name": "codex中转",
+                            "url": "https://code.oai1.online/register?aff=0eXc",
+                            "favicon": " https://code.oai1.online/logo.png",
+                            "bgColor": "#7a6128"
+                        },
+                        {
                             "id": 30,
-                            "name": "QQ邮箱",
-                            "url": "https://mail.qq.com/",
-                            "favicon": " https://mail.qq.com/zh_CN/htmledition/images/favicon/qqmail_favicon_16h.png",
+                            "name": "codex中转",
+                            "url": "https://newapiai.com/register?aff=qCTT",
+                            "favicon": " https://newapiai.com/logo.png",
                             "bgColor": "#5d3a33"
                         },
                         {

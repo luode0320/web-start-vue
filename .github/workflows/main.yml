@@ -1,42 +1,108 @@
 # 此文件相当简单
-# 1. 检测到main分支有提交触发jobs任务/手动触发
-# 2. 指定一个github服务器的环境ubuntu-latest
-# 3. 执行pull当前的代码到github服务器
-# 4. 登录docker, 并制作镜像(所有安装依赖等都写在dockerfile中, 不在此执行), 上传镜像到dockerhub和本地镜像仓库
-# 5. 连接远程服务器, 停止/删除容器, 拉取本地最新镜像, 调整镜像名称, 删除本地镜像, 启动容器
+# 1. 检测到 main 分支有提交触发 jobs 任务，也支持手动触发
+# 2. 指定一个 GitHub 服务器的环境 ubuntu-latest
+# 3. 拉取当前代码到 GitHub 服务器
+# 4. 读取 jobs.docker.env 中的动态配置，在 GitHub 服务器制作镜像并保存为 tar 包
+# 5. 上传镜像 tar 包到远程服务器，停止旧容器、删除旧镜像、加载新镜像并启动新容器
 
 name: CI/CD
+
 on:
   push:
     branches:
-      - main # 触发条件为 push main分支
+      - main
+  workflow_dispatch:
+
 jobs:
-  docker: # 描述词, 无实际意义
-    runs-on: ubuntu-latest # 运行的环境
-    # 步骤
+  docker:
+    runs-on: ubuntu-latest
+    env:
+      TARGET_OS: linux
+      TARGET_ARCH: amd64
+      IMAGE: luode0320/web-start:latest
+      IMAGE_TAR: web-start.tar
+      BUILDER_NAME: web-start-builder
+      CONTAINER: web
+      APP_DIR: /usr/local/src/web-start
+      REMOTE_USER: root
+      REMOTE_PORT: 22
+      # 这里保留原始 docker run 参数写法，后续项目直接改这一段即可。
+      DOCKER_RUN_ARGS: |
+        -d \
+        --network host \
+        --restart=always \
+        --name ${CONTAINER} \
+        -p 2000:2000
+      # 启动命令会直接追加在镜像名后面；为空时沿用镜像默认 CMD。
+      DOCKER_COMMAND: ''
+
     steps:
-      - uses: actions/checkout@v2 # 相当于执行git pull操作，以获取最新的代码
+      - uses: actions/checkout@v5
 
-      - name: 打包镜像, 上传 Docker Hub # 描述词, 无实际意义
-        run: | # 提交到dockerhub仓库和本地镜像仓库
-          docker login -u luode0320 -p ${{ secrets.REGISTRY_PASSWORD }}
-          docker build -t luode0320/web-start:latest .
-          docker push luode0320/web-start:latest
+      - uses: docker/setup-qemu-action@v3
 
-      - name: 登录服务器, 启动 # 描述词, 无实际意义
+      - name: 打包镜像归档
+        shell: bash
+        run: |
+          set -euo pipefail
 
-        uses: appleboy/ssh-action@master # 通过SSH登录到远程服务器
-        with: # 配置actions/setup-node@v1的一些属性
+          # 1. buildx builder 名称也走 env 配置，避免跨项目复用时残留固定命名。
+          docker buildx create --use --name "${BUILDER_NAME}"
+          docker buildx inspect --bootstrap
+          # 2. 镜像平台、镜像名和 tar 名都从 env 中读取，确保构建参数可复用。
+          docker buildx build \
+            --platform "${TARGET_OS}/${TARGET_ARCH}" \
+            --output "type=docker,dest=${IMAGE_TAR}" \
+            -t "${IMAGE}" .
+
+      - name: 上传镜像归档
+        uses: appleboy/scp-action@master
+        with:
           host: ${{ secrets.REMOTE_HOST }}
-          username: root
+          username: ${{ env.REMOTE_USER }}
           password: ${{ secrets.REMOTE_PASSWORD }}
-          port: 22
-          script: | # 远程服务器依次执行下面的命令, 删除容器, 删除镜像, 启动容器
-            docker rm -f web
-            docker rmi luode0320/web-start:latest
-            docker run -d \
-            --network host \
-            --restart=always \
-            --name web \
-            -p 2000:2000 \
-            luode0320/web-start:latest
+          port: ${{ env.REMOTE_PORT }}
+          source: ${{ env.IMAGE_TAR }}
+          target: ${{ env.APP_DIR }}
+
+      - name: 登录服务器并部署
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.REMOTE_HOST }}
+          username: ${{ env.REMOTE_USER }}
+          password: ${{ secrets.REMOTE_PASSWORD }}
+          port: ${{ env.REMOTE_PORT }}
+          script: |
+            # 1. 先加载 workflow env 中的动态配置，确保后续项目只改 env 区域即可复用部署流程。
+            set -euo pipefail
+            APP_DIR="${{ env.APP_DIR }}"
+            IMAGE="${{ env.IMAGE }}"
+            IMAGE_TAR="${{ env.IMAGE_TAR }}"
+            CONTAINER="${{ env.CONTAINER }}"
+            DOCKER_RUN_ARGS=$(cat <<'EOF'
+            ${{ env.DOCKER_RUN_ARGS }}
+            EOF
+            )
+            DOCKER_COMMAND=$(cat <<'EOF'
+            ${{ env.DOCKER_COMMAND }}
+            EOF
+            )
+
+            TAR_PATH="${APP_DIR}/${IMAGE_TAR}"
+
+            if [ ! -s "${TAR_PATH}" ]; then
+              echo "image archive not found: ${TAR_PATH}"
+              exit 1
+            fi
+
+            mkdir -p "${APP_DIR}"
+
+            docker rm -f "${CONTAINER}" || true
+            docker rmi "${IMAGE}" || true
+
+            # 2. 加载新镜像后按 workflow env 中的原始 docker run 参数执行，最后删除 tar 包避免堆积。
+            docker load -i "${TAR_PATH}"
+
+            # 3. 这里允许在 env 中直接保留完整参数块写法，例如 -v/-e/--add-host/--entrypoint 等。
+            eval "docker run ${DOCKER_RUN_ARGS} \"${IMAGE}\" ${DOCKER_COMMAND}"
+            rm -f "${TAR_PATH}"
