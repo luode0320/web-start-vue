@@ -9,18 +9,18 @@
                     "name": "常用",
                     "siteList": [
                         {
-                            "id": 10,
-                            "name": "豆包",
-                            "url": "https://www.doubao.com/chat/",
-                            "favicon": " https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao/web/logo-icon.png",
-                            "bgColor": "#4c720a"
+                            "id": 3,
+                            "name": "GitHub",
+                            "url": "https://github.com/",
+                            "favicon": "https://github.githubassets.com/favicons/favicon.png",
+                            "bgColor": ""
                         },
                         {
-                            "id": 4,
-                            "name": "欧皇俱乐部",
-                            "url": "https://oh.luode.vip/",
-                            "favicon": " https://oh.luode.vip/favicon.ico",
-                            "bgColor": "#342123"
+                            "id": 32,
+                            "name": "Docker",
+                            "url": "https://hub.docker.com/u/luode0320",
+                            "favicon": " https://hub.docker.com/favicon.ico",
+                            "bgColor": "#4901f4"
                         },
                         {
                             "id": 3,
@@ -50,18 +50,25 @@
                     "name": "常用",
                     "siteList": [
                         {
-                            "id": 3,
-                            "name": "GitHub",
-                            "url": "https://github.com/",
-                            "favicon": "https://github.githubassets.com/favicons/favicon.png",
-                            "bgColor": ""
+                            "id": 10,
+                            "name": "豆包",
+                            "url": "https://www.doubao.com/chat/",
+                            "favicon": " https://lf-flow-web-cdn.doubao.com/obj/flow-doubao/doubao/web/logo-icon.png",
+                            "bgColor": "#4c720a"
                         },
                         {
-                            "id": 32,
-                            "name": "Docker",
-                            "url": "https://hub.docker.com/u/luode0320",
-                            "favicon": " https://hub.docker.com/favicon.ico",
-                            "bgColor": "#4901f4"
+                            "id": 33,
+                            "name": "chatgpt",
+                            "url": "https://chatgpt.com/",
+                            "favicon": "https://chatgpt.com/favicon.ico",
+                            "bgColor": "#588019"
+                        },
+                        {
+                            "id": 16,
+                            "name": "DeepSeek",
+                            "url": "https://platform.deepseek.com/usage",
+                            "favicon": " https://fe-static.deepseek.com/platform/favicon.svg",
+                            "bgColor": "#015132"
                         },
                         {
                             "id": 66,
@@ -76,13 +83,6 @@
                             "url": "https://newapiai.com/register?aff=qCTT",
                             "favicon": " https://newapiai.com/logo.png",
                             "bgColor": "#5d3a33"
-                        },
-                        {
-                            "id": 31,
-                            "name": "谷歌邮箱",
-                            "url": "https://mail.google.com/",
-                            "favicon": " https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
-                            "bgColor": "#720e2c"
                         }
                     ]
                 },
@@ -139,6 +139,13 @@
                             "bgColor": "#0c0756"
                         },
                         {
+                            "id": 2,
+                            "name": "一元机场",
+                            "url": "https://xn--4gq62f52gdss.com/#/dashboard",
+                            "favicon": "https://tse4-mm.cn.bing.net/th/id/OIP-C.rL_5Z1zJxSDUmgPlhJaHrAAAAA?w=166&h=176&c=7&r=0&o=5&pid=1.7",
+                            "bgColor": "#054c01"
+                        },
+                        {
                             "id": 11,
                             "name": "UCloud",
                             "url": "https://www.ucloud.cn/",
@@ -146,11 +153,11 @@
                             "bgColor": "#323209"
                         },
                         {
-                            "id": 16,
-                            "name": "华纳云",
-                            "url": "https://www.hncloud.com/",
-                            "favicon": " https://www.hncloud.com/static/images/home/company-logo.jpg",
-                            "bgColor": "#015132"
+                            "id": 31,
+                            "name": "谷歌邮箱",
+                            "url": "https://mail.google.com/",
+                            "favicon": " https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
+                            "bgColor": "#720e2c"
                         },
                         {
                             "id": 69,
@@ -158,13 +165,6 @@
                             "url": "https://www.heyunidc.cn/",
                             "favicon": " https://www.heyunidc.cn/themes/web/www/upload/local69f107962db08.png",
                             "bgColor": "#367c24"
-                        },
-                        {
-                            "id": 33,
-                            "name": "维利云",
-                            "url": "https://wuehue.com/",
-                            "favicon": " https://wuehue.com/themes/web/www/upload/local686bcf0fa6957.png",
-                            "bgColor": "#588019"
                         }
                     ]
                 },
@@ -180,18 +180,18 @@
                             "bgColor": "#342123"
                         },
                         {
+                            "id": 4,
+                            "name": "欧皇俱乐部",
+                            "url": "https://oh.luode.vip/",
+                            "favicon": " https://oh.luode.vip/favicon.ico",
+                            "bgColor": "#342123"
+                        },
+                        {
                             "id": 17,
                             "name": "推特",
                             "url": "https://x.com/",
                             "favicon": " https://abs.twimg.com/favicons/twitter.3.ico",
                             "bgColor": "#46651b"
-                        },
-                        {
-                            "id": 2,
-                            "name": "一元机场",
-                            "url": "https://xn--4gq62f52gdss.com/#/dashboard",
-                            "favicon": "https://tse4-mm.cn.bing.net/th/id/OIP-C.rL_5Z1zJxSDUmgPlhJaHrAAAAA?w=166&h=176&c=7&r=0&o=5&pid=1.7",
-                            "bgColor": "#054c01"
                         },
                         {
                             "id": 19,
