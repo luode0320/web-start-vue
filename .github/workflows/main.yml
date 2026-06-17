@@ -117,12 +117,18 @@ jobs:
 
             mkdir -p "${APP_DIR}"
 
+            # 2. 删除旧镜像前先打印当前镜像 hash，方便和后续加载后的镜像做对比。
+            docker image inspect "${IMAGE}" --format 'before remove image id={{.Id}}' || true
             docker rm -f "${CONTAINER}" || true
             docker rmi "${IMAGE}" || true
 
-            # 2. 加载新镜像后按 workflow env 中的原始 docker run 参数执行，最后删除 tar 包避免堆积。
+            # 3. 加载新镜像后立即打印当前标签对应的镜像 hash，确认远端已切到新内容。
             docker load -i "${TAR_PATH}"
+            docker image inspect "${IMAGE}" --format 'after load image id={{.Id}}'
 
-            # 3. 这里允许在 env 中直接保留完整参数块写法，例如 -v/-e/--add-host/--entrypoint 等。
+            # 4. 这里允许在 env 中直接保留完整参数块写法，例如 -v/-e/--add-host/--entrypoint 等。
             eval "docker run ${DOCKER_RUN_ARGS} \"${IMAGE}\" ${DOCKER_COMMAND}"
+            # 5. 立即校验容器状态，避免日志里只看到上传成功却没有发现新容器未对外提供服务。
+            docker ps --filter "name=^/${CONTAINER}$"
+            docker logs --tail 20 "${CONTAINER}"
             rm -f "${TAR_PATH}"
