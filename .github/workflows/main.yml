@@ -23,19 +23,15 @@ jobs:
       TARGET_OS: linux
       TARGET_ARCH: amd64
       # 留空时默认复用 PROJECT_SLUG；只有容器名想单独区分时才需要覆盖。
-      CONTAINER: ''
       REMOTE_USER: root
       REMOTE_PORT: 22
       # 这里保留原始 docker run 参数写法，后续项目直接改这一段即可。
-      # 其中 ${CONTAINER} 会在部署脚本里按“显式配置优先，否则回退 PROJECT_SLUG”解析。
       DOCKER_RUN_ARGS: |
         -d \
         --network host \
         --restart=always \
-        --name ${CONTAINER} \
+        --name ${PROJECT_SLUG} \
         -p 2000:2000
-      # 启动命令会直接追加在镜像名后面；为空时沿用镜像默认 CMD。
-      DOCKER_COMMAND: ''
 
     steps:
       - uses: actions/checkout@v5
@@ -95,16 +91,12 @@ jobs:
             APP_DIR="${REMOTE_BASE_DIR}/${PROJECT_SLUG}"
             IMAGE="${IMAGE_NAMESPACE}/${PROJECT_SLUG}:latest"
             IMAGE_TAR="${PROJECT_SLUG}.tar"
-            CONTAINER="${{ env.CONTAINER }}"
+            CONTAINER="${{ env.PROJECT_SLUG }}"
             if [ -z "${CONTAINER}" ]; then
               CONTAINER="${PROJECT_SLUG}"
             fi
             DOCKER_RUN_ARGS=$(cat <<'EOF'
             ${{ env.DOCKER_RUN_ARGS }}
-            EOF
-            )
-            DOCKER_COMMAND=$(cat <<'EOF'
-            ${{ env.DOCKER_COMMAND }}
             EOF
             )
 
@@ -127,8 +119,7 @@ jobs:
             docker image inspect "${IMAGE}" --format 'after load image id={{.Id}}'
 
             # 4. 这里允许在 env 中直接保留完整参数块写法，例如 -v/-e/--add-host/--entrypoint 等。
-            eval "docker run ${DOCKER_RUN_ARGS} \"${IMAGE}\" ${DOCKER_COMMAND}"
+            eval "docker run ${DOCKER_RUN_ARGS} \"${IMAGE}\""
             # 5. 立即校验容器状态，避免日志里只看到上传成功却没有发现新容器未对外提供服务。
             docker ps --filter "name=^/${CONTAINER}$"
-            docker logs --tail 20 "${CONTAINER}"
             rm -f "${TAR_PATH}"

@@ -57,18 +57,18 @@
                             "bgColor": "#4c720a"
                         },
                         {
-                            "id": 33,
-                            "name": "chatgpt",
-                            "url": "https://chatgpt.com/",
-                            "favicon": "https://chatgpt.com/favicon.ico",
-                            "bgColor": "#588019"
-                        },
-                        {
                             "id": 16,
                             "name": "DeepSeek",
                             "url": "https://platform.deepseek.com/usage",
                             "favicon": " https://fe-static.deepseek.com/platform/favicon.svg",
                             "bgColor": "#015132"
+                        },
+                        {
+                            "id": 33,
+                            "name": "chatgpt",
+                            "url": "https://chatgpt.com/",
+                            "favicon": "https://chatgpt.com/favicon.ico",
+                            "bgColor": "#588019"
                         },
                         {
                             "id": 66,
