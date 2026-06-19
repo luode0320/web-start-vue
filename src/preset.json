@@ -64,11 +64,11 @@
                             "bgColor": "#015132"
                         },
                         {
-                            "id": 33,
-                            "name": "chatgpt",
-                            "url": "https://chatgpt.com/",
-                            "favicon": "https://chatgpt.com/favicon.ico",
-                            "bgColor": "#588019"
+                            "id": 11,
+                            "name": "火山引擎",
+                            "url": "https://www.volcengine.com/activity/codingplan?_vtm_=a441938.b28928.0_0.0_0.0.25_7653036741893097000",
+                            "favicon": " https://portal.volccdn.com/obj/volcfe/misc/favicon.png",
+                            "bgColor": "#323209"
                         },
                         {
                             "id": 66,
@@ -146,11 +146,11 @@
                             "bgColor": "#054c01"
                         },
                         {
-                            "id": 11,
-                            "name": "UCloud",
-                            "url": "https://www.ucloud.cn/",
-                            "favicon": " https://www-s.ucloud.cn/2022/08/eb6bd6c89022223bfadb107ebf489eea_1661418866215.png",
-                            "bgColor": "#323209"
+                            "id": 33,
+                            "name": "chatgpt",
+                            "url": "https://chatgpt.com/",
+                            "favicon": "https://chatgpt.com/favicon.ico",
+                            "bgColor": "#588019"
                         },
                         {
                             "id": 31,
