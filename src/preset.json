@@ -71,18 +71,18 @@
                             "bgColor": "#323209"
                         },
                         {
-                            "id": 66,
-                            "name": "codex中转",
-                            "url": "https://code.oai1.online/register?aff=0eXc",
-                            "favicon": " https://code.oai1.online/logo.png",
-                            "bgColor": "#7a6128"
+                            "id": 68,
+                            "name": "小米MiMo",
+                            "url": "https://aistudio.xiaomimimo.com/#/?forcePage=claw",
+                            "favicon": " https://aistudio.xiaomimimo.com/favicon.png",
+                            "bgColor": "#2fae79"
                         },
                         {
-                            "id": 30,
-                            "name": "codex中转",
-                            "url": "https://newapiai.com/register?aff=qCTT",
-                            "favicon": " https://newapiai.com/logo.png",
-                            "bgColor": "#5d3a33"
+                            "id": 70,
+                            "name": "蓝奏云优享版",
+                            "url": "https://www.ilanzou.com/",
+                            "favicon": " https://www.ilanzou.com/favicon.ico",
+                            "bgColor": "#056a92"
                         }
                     ]
                 },
@@ -90,13 +90,6 @@
                     "id": 65,
                     "name": "常用",
                     "siteList": [
-                        {
-                            "id": 13,
-                            "name": "Hamibot",
-                            "url": "https://hamibot.cn/dashboard",
-                            "favicon": " https://hamibot.cn/favicon.ico",
-                            "bgColor": "#c05701"
-                        },
                         {
                             "id": 34,
                             "name": "json工具",
@@ -112,18 +105,25 @@
                             "bgColor": "#2c0aa9"
                         },
                         {
-                            "id": 68,
-                            "name": "小米MiMo",
-                            "url": "https://aistudio.xiaomimimo.com/#/?forcePage=claw",
-                            "favicon": " https://aistudio.xiaomimimo.com/favicon.png",
-                            "bgColor": "#2fae79"
+                            "id": 66,
+                            "name": "codex中转",
+                            "url": "https://code.oai1.online/register?aff=0eXc",
+                            "favicon": " https://code.oai1.online/logo.png",
+                            "bgColor": "#7a6128"
                         },
                         {
-                            "id": 70,
-                            "name": "蓝奏云优享版",
-                            "url": "https://www.ilanzou.com/",
-                            "favicon": " https://www.ilanzou.com/favicon.ico",
-                            "bgColor": "#056a92"
+                            "id": 30,
+                            "name": "codex中转",
+                            "url": "https://newapiai.com/register?aff=qCTT",
+                            "favicon": " https://newapiai.com/logo.png",
+                            "bgColor": "#5d3a33"
+                        },
+                        {
+                            "id": 13,
+                            "name": "codex中转",
+                            "url": "https://llmtoken.io/subscribe",
+                            "favicon": "https://llmtoken.io/chatgpt-pink.svg",
+                            "bgColor": "#c05701"
                         }
                     ]
                 },
@@ -270,8 +270,8 @@
                         {
                             "id": 238,
                             "name": "Gitee",
-                            "url": "https://gitee.com/",
-                            "favicon": " https://gitee.com/favicon.ico",
+                            "url": "https://hamibot.cn/dashboard",
+                            "favicon": " https://hamibot.cn/favicon.ico",
                             "bgColor": "#f57a30"
                         },
                         {
@@ -358,10 +358,10 @@
                         },
                         {
                             "id": 257,
-                            "name": "虚拟号码",
-                            "url": "https://sms-activate.org/cn",
-                            "favicon": " https://smsactivate.s3.eu-central-1.amazonaws.com/assets/img/activate_favicon.png",
-                            "bgColor": "#37b752"
+                            "name": "Hamibot",
+                            "url": "https://hamibot.cn/dashboard",
+                            "favicon": " https://gitee.com/favicon.ico",
+                            "bgColor": "#f57a30"
                         },
                         {
                             "id": 258,
