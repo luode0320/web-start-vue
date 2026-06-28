@@ -71,11 +71,11 @@
                             "bgColor": "#323209"
                         },
                         {
-                            "id": 68,
-                            "name": "小米MiMo",
-                            "url": "https://aistudio.xiaomimimo.com/#/?forcePage=claw",
-                            "favicon": " https://aistudio.xiaomimimo.com/favicon.png",
-                            "bgColor": "#2fae79"
+                            "id": 2,
+                            "name": "一元机场",
+                            "url": "https://xn--4gq62f52gdss.com/#/dashboard",
+                            "favicon": "https://tse4-mm.cn.bing.net/th/id/OIP-C.rL_5Z1zJxSDUmgPlhJaHrAAAAA?w=166&h=176&c=7&r=0&o=5&pid=1.7",
+                            "bgColor": "#054c01"
                         },
                         {
                             "id": 70,
@@ -91,18 +91,11 @@
                     "name": "常用",
                     "siteList": [
                         {
-                            "id": 34,
-                            "name": "json工具",
-                            "url": "https://tool.lu/json/",
-                            "favicon": " https://tool.lu/favicon.ico",
-                            "bgColor": "#330d3d"
-                        },
-                        {
-                            "id": 67,
-                            "name": "时间戳工具",
-                            "url": "https://tool.lu/timestamp/",
-                            "favicon": " https://tool.lu/favicon.ico",
-                            "bgColor": "#2c0aa9"
+                            "id": 33,
+                            "name": "chatgpt",
+                            "url": "https://chatgpt.com/",
+                            "favicon": "https://chatgpt.com/favicon.ico",
+                            "bgColor": "#588019"
                         },
                         {
                             "id": 66,
@@ -124,6 +117,13 @@
                             "url": "https://llmtoken.io/subscribe",
                             "favicon": "https://llmtoken.io/chatgpt-pink.svg",
                             "bgColor": "#c05701"
+                        },
+                        {
+                            "id": 68,
+                            "name": "codex中转",
+                            "url": "https://www.maitokens.com/register?aff=ydSj",
+                            "favicon": " https://www.maitokens.com/logo.png",
+                            "bgColor": "#2fae79"
                         }
                     ]
                 },
@@ -132,25 +132,25 @@
                     "name": "常用",
                     "siteList": [
                         {
+                            "id": 34,
+                            "name": "json工具",
+                            "url": "https://tool.lu/json/",
+                            "favicon": " https://tool.lu/favicon.ico",
+                            "bgColor": "#330d3d"
+                        },
+                        {
+                            "id": 67,
+                            "name": "时间戳工具",
+                            "url": "https://tool.lu/timestamp/",
+                            "favicon": " https://tool.lu/favicon.ico",
+                            "bgColor": "#2c0aa9"
+                        },
+                        {
                             "id": 18,
                             "name": "CoinMarketcap",
                             "url": "https://coinmarketcap.com",
                             "favicon": " https://coinmarketcap.com/favicon.ico",
                             "bgColor": "#0c0756"
-                        },
-                        {
-                            "id": 2,
-                            "name": "一元机场",
-                            "url": "https://xn--4gq62f52gdss.com/#/dashboard",
-                            "favicon": "https://tse4-mm.cn.bing.net/th/id/OIP-C.rL_5Z1zJxSDUmgPlhJaHrAAAAA?w=166&h=176&c=7&r=0&o=5&pid=1.7",
-                            "bgColor": "#054c01"
-                        },
-                        {
-                            "id": 33,
-                            "name": "chatgpt",
-                            "url": "https://chatgpt.com/",
-                            "favicon": "https://chatgpt.com/favicon.ico",
-                            "bgColor": "#588019"
                         },
                         {
                             "id": 31,
@@ -180,18 +180,18 @@
                             "bgColor": "#342123"
                         },
                         {
-                            "id": 4,
-                            "name": "欧皇俱乐部",
-                            "url": "https://oh.luode.vip/",
-                            "favicon": " https://oh.luode.vip/favicon.ico",
-                            "bgColor": "#342123"
-                        },
-                        {
                             "id": 17,
                             "name": "推特",
                             "url": "https://x.com/",
                             "favicon": " https://abs.twimg.com/favicons/twitter.3.ico",
                             "bgColor": "#46651b"
+                        },
+                        {
+                            "id": 4,
+                            "name": "欧皇俱乐部",
+                            "url": "https://oh.luode.vip/",
+                            "favicon": " https://oh.luode.vip/favicon.ico",
+                            "bgColor": "#342123"
                         },
                         {
                             "id": 19,
