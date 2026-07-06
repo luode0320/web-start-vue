@@ -146,18 +146,18 @@
                             "bgColor": "#2c0aa9"
                         },
                         {
+                            "id": 20,
+                            "name": "plus0.006",
+                            "url": "https://ai2api.cc/keys",
+                            "favicon": "https://chatgpt.com/favicon.ico",
+                            "bgColor": "#251001"
+                        },
+                        {
                             "id": 18,
                             "name": "CoinMarketcap",
                             "url": "https://coinmarketcap.com",
                             "favicon": " https://coinmarketcap.com/favicon.ico",
                             "bgColor": "#0c0756"
-                        },
-                        {
-                            "id": 31,
-                            "name": "谷歌邮箱",
-                            "url": "https://mail.google.com/",
-                            "favicon": " https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
-                            "bgColor": "#720e2c"
                         },
                         {
                             "id": 69,
@@ -187,6 +187,13 @@
                             "bgColor": "#46651b"
                         },
                         {
+                            "id": 31,
+                            "name": "谷歌邮箱",
+                            "url": "https://mail.google.com/",
+                            "favicon": " https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
+                            "bgColor": "#720e2c"
+                        },
+                        {
                             "id": 4,
                             "name": "欧皇俱乐部",
                             "url": "https://oh.luode.vip/",
@@ -199,13 +206,6 @@
                             "url": "https://www.alipansou.com/",
                             "favicon": " https://www.alipansou.com/favicon.ico",
                             "bgColor": "#613b2d"
-                        },
-                        {
-                            "id": 20,
-                            "name": "磁力猫",
-                            "url": "https://clm.la/",
-                            "favicon": " https://clm41.top/static/img/logo.gif",
-                            "bgColor": "#251001"
                         }
                     ]
                 }
