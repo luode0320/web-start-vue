@@ -23,11 +23,11 @@
                             "bgColor": "#4901f4"
                         },
                         {
-                            "id": 3,
-                            "name": "BTC事件合约",
-                            "url": "https://btc.luode.vip/",
-                            "favicon": "/svg/btc.svg",
-                            "bgColor": "#4323fa"
+                            "id": 4,
+                            "name": "欧皇俱乐部",
+                            "url": "https://oh.luode.vip/",
+                            "favicon": " https://oh.luode.vip/favicon.ico",
+                            "bgColor": "#342123"
                         },
                         {
                             "id": 6,
@@ -57,6 +57,13 @@
                             "bgColor": "#4c720a"
                         },
                         {
+                            "id": 20,
+                            "name": "通义千问",
+                            "url": "https://www.qianwen.com/",
+                            "favicon": " https://img.alicdn.com/imgextra/i2/O1CN01taBbMS1CfyJoOt0lB_!!6000000000109-2-tps-80-80.png",
+                            "bgColor": "#251001"
+                        },
+                        {
                             "id": 16,
                             "name": "DeepSeek",
                             "url": "https://platform.deepseek.com/usage",
@@ -69,13 +76,6 @@
                             "url": "https://www.volcengine.com/activity/codingplan?_vtm_=a441938.b28928.0_0.0_0.0.25_7653036741893097000",
                             "favicon": " https://portal.volccdn.com/obj/volcfe/misc/favicon.png",
                             "bgColor": "#323209"
-                        },
-                        {
-                            "id": 2,
-                            "name": "一元机场",
-                            "url": "https://xn--4gq62f52gdss.com/#/dashboard",
-                            "favicon": "https://tse4-mm.cn.bing.net/th/id/OIP-C.rL_5Z1zJxSDUmgPlhJaHrAAAAA?w=166&h=176&c=7&r=0&o=5&pid=1.7",
-                            "bgColor": "#054c01"
                         },
                         {
                             "id": 70,
@@ -146,11 +146,11 @@
                             "bgColor": "#2c0aa9"
                         },
                         {
-                            "id": 20,
-                            "name": "plus0.006",
-                            "url": "https://ai2api.cc/keys",
-                            "favicon": "https://chatgpt.com/favicon.ico",
-                            "bgColor": "#251001"
+                            "id": 2,
+                            "name": "一元机场",
+                            "url": "https://xn--4gq62f52gdss.com/#/dashboard",
+                            "favicon": "https://tse4-mm.cn.bing.net/th/id/OIP-C.rL_5Z1zJxSDUmgPlhJaHrAAAAA?w=166&h=176&c=7&r=0&o=5&pid=1.7",
+                            "bgColor": "#054c01"
                         },
                         {
                             "id": 18,
@@ -174,17 +174,24 @@
                     "siteList": [
                         {
                             "id": 9,
-                            "name": "推特下载",
-                            "url": "https://x.luode.vip/",
-                            "favicon": " https://abs.twimg.com/favicons/twitter.3.ico",
+                            "name": "账号神秘商店",
+                            "url": "https://haicao666.com/",
+                            "favicon": " https://haicao666.com/favicon.ico",
                             "bgColor": "#342123"
                         },
                         {
                             "id": 17,
-                            "name": "推特",
-                            "url": "https://x.com/",
-                            "favicon": " https://abs.twimg.com/favicons/twitter.3.ico",
+                            "name": "电话卡神秘商店",
+                            "url": "https://hongkongsim.shop/",
+                            "favicon": " https://hongkongsim.shop/dj.svg",
                             "bgColor": "#46651b"
+                        },
+                        {
+                            "id": 3,
+                            "name": "接码神秘商店",
+                            "url": "https://hero-sms.com/cn",
+                            "favicon": " https://hero-sms.com/img/icons/favicon.svg",
+                            "bgColor": "#4323fa"
                         },
                         {
                             "id": 31,
@@ -192,13 +199,6 @@
                             "url": "https://mail.google.com/",
                             "favicon": " https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
                             "bgColor": "#720e2c"
-                        },
-                        {
-                            "id": 4,
-                            "name": "欧皇俱乐部",
-                            "url": "https://oh.luode.vip/",
-                            "favicon": " https://oh.luode.vip/favicon.ico",
-                            "bgColor": "#342123"
                         },
                         {
                             "id": 19,
