@@ -91,6 +91,20 @@
                     "name": "常用",
                     "siteList": [
                         {
+                            "id": 13,
+                            "name": "0.04plus",
+                            "url": "https://tkapi.xyz/keys",
+                            "favicon": "https://chatgpt.com/favicon.ico",
+                            "bgColor": "#c05701"
+                        },
+                        {
+                            "id": 19,
+                            "name": "0.04puls",
+                            "url": "https://banliapi.top/keys",
+                            "favicon": "https://chatgpt.com/favicon.ico",
+                            "bgColor": "#613b2d"
+                        },
+                        {
                             "id": 66,
                             "name": "pro0.15 puls0.07",
                             "url": "https://www.808token.com/",
@@ -98,25 +112,11 @@
                             "bgColor": "#7a6128"
                         },
                         {
-                            "id": 19,
-                            "name": "0.06puls",
-                            "url": "https://synapse-ai.uk/keys",
-                            "favicon": "https://chatgpt.com/favicon.ico",
-                            "bgColor": "#613b2d"
-                        },
-                        {
                             "id": 68,
                             "name": "0.12puls 0.24pro",
                             "url": "https://www.maitokens.com/register?aff=ydSj",
                             "favicon": "https://chatgpt.com/favicon.ico",
                             "bgColor": "#2fae79"
-                        },
-                        {
-                            "id": 13,
-                            "name": "0.15pro",
-                            "url": "https://xm.aceapi.cc",
-                            "favicon": "https://chatgpt.com/favicon.ico",
-                            "bgColor": "#c05701"
                         },
                         {
                             "id": 30,
