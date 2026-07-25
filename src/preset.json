@@ -119,11 +119,11 @@
                             "bgColor": "#7a6128"
                         },
                         {
-                            "id": 30,
-                            "name": "生图",
-                            "url": "https://newapiai.com/register?aff=qCTT",
-                            "favicon": "https://chatgpt.com/favicon.ico",
-                            "bgColor": "#5d3a33"
+                            "id": 31,
+                            "name": "谷歌邮箱",
+                            "url": "https://mail.google.com/",
+                            "favicon": " https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
+                            "bgColor": "#720e2c"
                         }
                     ]
                 },
@@ -201,11 +201,11 @@
                             "bgColor": "#4323fa"
                         },
                         {
-                            "id": 31,
-                            "name": "谷歌邮箱",
-                            "url": "https://mail.google.com/",
-                            "favicon": " https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
-                            "bgColor": "#720e2c"
+                            "id": 30,
+                            "name": "迈巢邮箱",
+                            "url": "https://mailnest.top/buy-email",
+                            "favicon": " https://mailnest.top/images/favicon.png",
+                            "bgColor": "#5d3a33"
                         }
                     ]
                 }
