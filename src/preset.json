@@ -71,18 +71,18 @@
                             "bgColor": "#251001"
                         },
                         {
-                            "id": 16,
-                            "name": "DeepSeek",
-                            "url": "https://platform.deepseek.com/usage",
-                            "favicon": " https://fe-static.deepseek.com/platform/favicon.svg",
-                            "bgColor": "#015132"
-                        },
-                        {
                             "id": 11,
                             "name": "火山引擎",
                             "url": "https://www.volcengine.com/activity/codingplan?_vtm_=a441938.b28928.0_0.0_0.0.25_7653036741893097000",
                             "favicon": " https://portal.volccdn.com/obj/volcfe/misc/favicon.png",
                             "bgColor": "#323209"
+                        },
+                        {
+                            "id": 16,
+                            "name": "DeepSeek",
+                            "url": "https://platform.deepseek.com/usage",
+                            "favicon": " https://fe-static.deepseek.com/platform/favicon.svg",
+                            "bgColor": "#015132"
                         }
                     ]
                 },
@@ -91,11 +91,11 @@
                     "name": "常用",
                     "siteList": [
                         {
-                            "id": 13,
-                            "name": "0.04plus",
-                            "url": "https://tkapi.xyz/keys",
+                            "id": 68,
+                            "name": "号池工具",
+                            "url": "https://github.com/jlcodes99/cockpit-tools",
                             "favicon": "https://chatgpt.com/favicon.ico",
-                            "bgColor": "#c05701"
+                            "bgColor": "#2fae79"
                         },
                         {
                             "id": 19,
@@ -105,18 +105,18 @@
                             "bgColor": "#613b2d"
                         },
                         {
+                            "id": 13,
+                            "name": "0.04plus",
+                            "url": "https://tkapi.xyz/keys",
+                            "favicon": "https://chatgpt.com/favicon.ico",
+                            "bgColor": "#c05701"
+                        },
+                        {
                             "id": 66,
                             "name": "pro0.15 puls0.07",
                             "url": "https://www.808token.com/",
                             "favicon": "https://chatgpt.com/favicon.ico",
                             "bgColor": "#7a6128"
-                        },
-                        {
-                            "id": 68,
-                            "name": "0.12puls 0.24pro",
-                            "url": "https://www.maitokens.com/register?aff=ydSj",
-                            "favicon": "https://chatgpt.com/favicon.ico",
-                            "bgColor": "#2fae79"
                         },
                         {
                             "id": 30,
@@ -180,6 +180,13 @@
                             "bgColor": "#342123"
                         },
                         {
+                            "id": 70,
+                            "name": "GPT神秘商店",
+                            "url": "https://pay.ldxp.cn/shop/7KJU4N9A",
+                            "favicon": " https://pay.ldxp.cn/favicon.ico",
+                            "bgColor": "#056a92"
+                        },
+                        {
                             "id": 17,
                             "name": "电话卡神秘商店",
                             "url": "https://hongkongsim.shop/",
@@ -199,13 +206,6 @@
                             "url": "https://mail.google.com/",
                             "favicon": " https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
                             "bgColor": "#720e2c"
-                        },
-                        {
-                            "id": 70,
-                            "name": "蓝奏云优享版",
-                            "url": "https://www.ilanzou.com/",
-                            "favicon": " https://www.ilanzou.com/favicon.ico",
-                            "bgColor": "#056a92"
                         }
                     ]
                 }
@@ -276,9 +276,9 @@
                         },
                         {
                             "id": 239,
-                            "name": "GitLab",
-                            "url": "https://gitlab.com/",
-                            "favicon": " https://about.gitlab.com/nuxt-images/ico/favicon.ico?cache=20220414",
+                            "name": "蓝奏云优享版",
+                            "url": "https://www.ilanzou.com/",
+                            "favicon": " https://www.ilanzou.com/favicon.ico",
                             "bgColor": "#092677"
                         },
                         {
@@ -303,10 +303,10 @@
                     "siteList": [
                         {
                             "id": 246,
-                            "name": "NameSilo",
-                            "url": "https://www.namesilo.com/",
-                            "favicon": "https://tse1-mm.cn.bing.net/th/id/OIP-C.sRmAa_9qhaC6lxtVxyyMAgAAAA?w=133&h=150&c=7&r=0&o=5&pid=1.7",
-                            "bgColor": "#bd7a2a"
+                            "name": "蓝奏云优享版",
+                            "url": "https://www.ilanzou.com/",
+                            "favicon": " https://about.gitlab.com/nuxt-images/ico/favicon.ico?cache=20220414",
+                            "bgColor": "#092677"
                         },
                         {
                             "id": 249,
