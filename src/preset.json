@@ -106,16 +106,16 @@
                         },
                         {
                             "id": 13,
-                            "name": "0.04plus",
-                            "url": "https://tkapi.pw/keys",
-                            "favicon": "https://chatgpt.com/favicon.ico",
+                            "name": "元衡api",
+                            "url": "https://nan.meta-api.vip/console/token",
+                            "favicon": "https://nan.meta-api.vip/yuanheng-logo.png",
                             "bgColor": "#c05701"
                         },
                         {
                             "id": 66,
-                            "name": "pro0.15 puls0.07",
-                            "url": "https://www.808token.com/",
-                            "favicon": "https://chatgpt.com/favicon.ico",
+                            "name": "liminapi",
+                            "url": "https://vip.luminai.cc/console/token",
+                            "favicon": "https://file.luminai.cc//logo-luminai.png",
                             "bgColor": "#7a6128"
                         },
                         {
