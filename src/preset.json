@@ -65,9 +65,9 @@
                         },
                         {
                             "id": 20,
-                            "name": "通义千问",
-                            "url": "https://www.qianwen.com/",
-                            "favicon": " https://img.alicdn.com/imgextra/i2/O1CN01taBbMS1CfyJoOt0lB_!!6000000000109-2-tps-80-80.png",
+                            "name": "kimi",
+                            "url": "https://www.kimi.com/",
+                            "favicon": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAC+0lEQVR4AbSVA4wdURiFO2+e17Z3g9q2FdS27TaqbQe1GzuLsHa7tm376fT+k8nU7r3Jebo43493pwMASWyITJ5M85keM1UyWZjwj6IzquQzF8geouIrm+uYhjJFM5mYwElm8pC9dJI30cg/xDJZmcBZVtlrqOQtpyT6O+a8IaIlb7kuZm5mggqCWg9B1H49Z5L7TWoO8JEAjX9/2I89BuPArVDZe3+9hrylDgUPCToHuK58Aa8DVnjuaYGh3/qv11QSgIUXgMrBFx67yuF1EAzCBvvxp7/3F/3xAc7OzujXr5+koKAgqFSq767TarWIiIhQ1vbu3Ruenp4QHXzgtjGFQZTBddVrqD07fW//jwHGjRuH+vp6NDQ04PLly9Dr9d+s0el0mDp1KpKTk6W1dXV1ePbsGfr06QNB1EB0DoLoEgqV0Y01pPBnAJMnT4Y8cP36dRgMhi/mRVHEzJkzkZOTA6vVCgASyPDhwykr3z/3fwGQ+ezZs1FVVQWbzQYaWVlZlH6aozX8ACjtFDmZA6Dopch79uyp7OUGQH0wb9485OXlSZFbLBa8e/cOw4YNo8j5Atjb22Pu3LnIz8+XzEmxsbEYOHAgNBoN7eEHcPv2baxcuRLV1dVKzVNSUtClSxfl78kVoLy8HM3Nzfh8XL16Fe7u7vwBfjRMJhNiYmIwePBg5Y7gDlBaWoo3b96gra0NAKQmTE9Px7p16+Do6MgXoKKiAhMmTEBwcDDOnTunlIR6gm7Lhw8fws/Pjw9ASUkJfVfmKOVLly5FYWEhZUEBSUxMxLRp0+Dh4UG98f8A7t+/D6PR+Pk8GUgPn6ioKDQ1NSkQjY2N1Bv0MON0FX8FQSU5ePCgcjPK1zJlgT8ASRAEKTujPs7ZGZZAiXYA3gaJpqbm/56eHhAGxStRpR03N/d/W1vb/4mJiSA24T4DtFn0f4DwG3ijlP4Y0SiNwdcbonEvKXbAOyYD3jXD1jn9TUPLf6F3TrF1z2OhieMNFbvnr6FmxqB3zwGgxHDDXBRdUQAAAABJRU5ErkJggg==",
                             "bgColor": "#251001"
                         },
                         {
@@ -106,8 +106,8 @@
                         },
                         {
                             "id": 13,
-                            "name": "元衡api",
-                            "url": "https://nan.meta-api.vip/console/token",
+                            "name": "sillydream",
+                            "url": "https://wish.sillydream.top/console/token",
                             "favicon": "https://nan.meta-api.vip/yuanheng-logo.png",
                             "bgColor": "#c05701"
                         },
