@@ -180,13 +180,6 @@
                             "bgColor": "#342123"
                         },
                         {
-                            "id": 70,
-                            "name": "AI神秘商店",
-                            "url": "https://8283.pw/",
-                            "favicon": " https://8283.pw/favicon.svg",
-                            "bgColor": "#056a92"
-                        },
-                        {
                             "id": 17,
                             "name": "电话卡神秘商店",
                             "url": "https://hongkongsim.shop/",
@@ -201,10 +194,17 @@
                             "bgColor": "#4323fa"
                         },
                         {
+                            "id": 70,
+                            "name": "AI神秘商店",
+                            "url": "https://8283.pw/",
+                            "favicon": " https://8283.pw/favicon.svg",
+                            "bgColor": "#056a92"
+                        },
+                        {
                             "id": 30,
-                            "name": "迈巢邮箱",
-                            "url": "https://mailnest.top/buy-email",
-                            "favicon": " https://mailnest.top/images/favicon.png",
+                            "name": "AI神秘商店",
+                            "url": "https://www.oken.ai/zh",
+                            "favicon": " https://www.oken.ai/_next/static/media/favicon.d1865f0d57f0243f.png",
                             "bgColor": "#5d3a33"
                         }
                     ]
