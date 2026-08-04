@@ -91,6 +91,13 @@
                     "name": "常用",
                     "siteList": [
                         {
+                            "id": 13,
+                            "name": "翻译",
+                            "url": "https://fanyi.youdao.com/#/AITranslate",
+                            "favicon": " https://ydlunacommon-cdn.nosdn.127.net/31cf4b56e6c0b3af668aa079de1a898c.png",
+                            "bgColor": "#c05701"
+                        },
+                        {
                             "id": 68,
                             "name": "号池工具",
                             "url": "https://github.com/jlcodes99/cockpit-tools",
@@ -99,23 +106,16 @@
                         },
                         {
                             "id": 19,
-                            "name": "0.04puls",
-                            "url": "https://banliapi.top/keys",
-                            "favicon": "https://chatgpt.com/favicon.ico",
+                            "name": "luminai",
+                            "url": "https://vip.luminai.cc/console/token",
+                            "favicon": "https://file.luminai.cc//logo-luminai.png",
                             "bgColor": "#613b2d"
                         },
                         {
-                            "id": 13,
-                            "name": "sillydream",
-                            "url": "https://wish.sillydream.top/console/token",
-                            "favicon": "https://nan.meta-api.vip/yuanheng-logo.png",
-                            "bgColor": "#c05701"
-                        },
-                        {
                             "id": 66,
-                            "name": "liminapi",
-                            "url": "https://vip.luminai.cc/console/token",
-                            "favicon": "https://file.luminai.cc//logo-luminai.png",
+                            "name": "banliapi",
+                            "url": "https://banliapi.top/keys",
+                            "favicon": "https://banliapi.top/logo.svg",
                             "bgColor": "#7a6128"
                         },
                         {
