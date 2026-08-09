@@ -106,7 +106,7 @@
                         },
                         {
                             "id": 68,
-                            "name": "grok",
+                            "name": "llm-all",
                             "url": "https://www.llm-all.pro/keys",
                             "favicon": "https://registry.npmmirror.com/@lobehub/icons-static-svg/latest/files/icons/poe-color.svg",
                             "bgColor": "#2fae79"
