@@ -92,21 +92,21 @@
                     "siteList": [
                         {
                             "id": 19,
-                            "name": "gpt-sol",
-                            "url": "https://api.luminai.cc/console/token",
+                            "name": "luminai",
+                            "url": "https://vip.luminai.cc/console/token",
                             "favicon": "https://file.luminai.cc//logo-luminai.png",
                             "bgColor": "#613b2d"
                         },
                         {
                             "id": 66,
-                            "name": "grok1",
+                            "name": "banliapi",
                             "url": "https://banliapi.top/keys",
                             "favicon": "https://banliapi.top/logo.svg",
                             "bgColor": "#7a6128"
                         },
                         {
                             "id": 68,
-                            "name": "grok2",
+                            "name": "grok",
                             "url": "https://www.llm-all.pro/keys",
                             "favicon": "https://registry.npmmirror.com/@lobehub/icons-static-svg/latest/files/icons/poe-color.svg",
                             "bgColor": "#2fae79"
