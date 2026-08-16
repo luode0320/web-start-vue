@@ -94,7 +94,7 @@
                             "id": 66,
                             "name": "luode",
                             "url": "https://api.luode.vip/",
-                            "favicon": "https://oh.luode.vip/favicon.ico",
+                            "favicon": "https://qn.ldxp.cn/c1/a55bf341bae4880bf8e391a27dfcaf.png",
                             "bgColor": "#7a6128"
                         },
                         {
@@ -173,18 +173,18 @@
                     "name": "常用",
                     "siteList": [
                         {
+                            "id": 17,
+                            "name": "链动小铺",
+                            "url": "https://pay.ldxp.cn/shop/UFB11GKY",
+                            "favicon": " https://pay.ldxp.cn/favicon.ico",
+                            "bgColor": "#46651b"
+                        },
+                        {
                             "id": 9,
                             "name": "账号神秘商店",
                             "url": "https://haicao666.com/",
                             "favicon": " https://haicao666.com/favicon.ico",
                             "bgColor": "#342123"
-                        },
-                        {
-                            "id": 17,
-                            "name": "电话卡神秘商店",
-                            "url": "https://hongkongsim.shop/",
-                            "favicon": " https://hongkongsim.shop/dj.svg",
-                            "bgColor": "#46651b"
                         },
                         {
                             "id": 3,
