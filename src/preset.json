@@ -112,18 +112,18 @@
                             "bgColor": "#613b2d"
                         },
                         {
-                            "id": 20,
-                            "name": "arithcore",
-                            "url": "https://api.arithcore.com/keys",
-                            "favicon": "https://quark.hglspace.com/arithcore-logo-dark-1024.png",
-                            "bgColor": "#251001"
+                            "id": 70,
+                            "name": "AI账号神秘商店",
+                            "url": "https://8283.pw/",
+                            "favicon": " https://8283.pw/favicon.svg",
+                            "bgColor": "#056a92"
                         },
                         {
-                            "id": 31,
-                            "name": "谷歌邮箱",
-                            "url": "https://mail.google.com/",
-                            "favicon": " https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
-                            "bgColor": "#720e2c"
+                            "id": 30,
+                            "name": "AI中转神秘商店",
+                            "url": "https://lowapi.button1.cn/",
+                            "favicon": " https://www.oken.ai/_next/static/media/favicon.d1865f0d57f0243f.png",
+                            "bgColor": "#5d3a33"
                         }
                     ]
                 },
@@ -194,18 +194,18 @@
                             "bgColor": "#4323fa"
                         },
                         {
-                            "id": 70,
-                            "name": "AI账号神秘商店",
-                            "url": "https://8283.pw/",
-                            "favicon": " https://8283.pw/favicon.svg",
-                            "bgColor": "#056a92"
+                            "id": 20,
+                            "name": "接码神秘平台",
+                            "url": "https://lubansms.com/v2/keywordReceiveSms",
+                            "favicon": " https://lubansms.com/v2/assets/images/favicon.ico",
+                            "bgColor": "#251001"
                         },
                         {
-                            "id": 30,
-                            "name": "AI中转神秘商店",
-                            "url": "https://lowapi.button1.cn/",
-                            "favicon": " https://www.oken.ai/_next/static/media/favicon.d1865f0d57f0243f.png",
-                            "bgColor": "#5d3a33"
+                            "id": 31,
+                            "name": "谷歌邮箱",
+                            "url": "https://mail.google.com/",
+                            "favicon": " https://ssl.gstatic.com/ui/v1/icons/mail/rfr/gmail.ico",
+                            "bgColor": "#720e2c"
                         }
                     ]
                 }
