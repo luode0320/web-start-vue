@@ -65,9 +65,9 @@
                         },
                         {
                             "id": 11,
-                            "name": "workbuddy",
-                            "url": "https://www.workbuddy.ai/",
-                            "favicon": " https://codebuddy-1328495429.cos.accelerate.myqcloud.com/web/workbuddy/cad8035d99686c682893358877519f6b3377a286/assets/workbuddy-icon-BujKiC6G.svg",
+                            "name": "华纳云",
+                            "url": "https://u.hncloud.com/user/#/product/ecs/lightList",
+                            "favicon": " https://u.hncloud.com/user/favicon.ico",
                             "bgColor": "#323209"
                         },
                         {
@@ -385,9 +385,9 @@
                     "siteList": [
                         {
                             "id": 265,
-                            "name": "Ant Design Vue",
-                            "url": "https://antdv.com/components/overview-cn",
-                            "favicon": " https://next.antdv.com/assets/logo.1ef800a8.svg",
+                            "name": "AI浏览器",
+                            "url": "https://browser-use.com/",
+                            "favicon": "https://browser-use.com/logo-white.svg",
                             "bgColor": "#2a196f"
                         },
                         {
