@@ -24,7 +24,7 @@ jobs:
       TARGET_ARCH: amd64
       # 留空时默认复用 PROJECT_SLUG；只有容器名想单独区分时才需要覆盖。
       REMOTE_USER: root
-      REMOTE_PORT: 22
+      REMOTE_PORT: 18998
       # 这里保留原始 docker run 参数写法，后续项目直接改这一段即可。
       DOCKER_RUN_ARGS: |
         -d \
