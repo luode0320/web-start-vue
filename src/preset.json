@@ -31,16 +31,16 @@
                         },
                         {
                             "id": 6,
-                            "name": "BNB网格",
+                            "name": "币安网格",
                             "url": "https://wange.luode.vip/",
-                            "favicon": "https://cdn.investing.com/crypto-logos/20x20/v2/bnb.png",
+                            "favicon": "https://wange.luode.vip/favicon.ico?v=2",
                             "bgColor": "#1d3014"
                         },
                         {
                             "id": 1730221198177,
                             "name": "sms",
                             "url": "https://sms.luode.vip/",
-                            "favicon": "https://sms.luode.vip/favicon.ico",
+                            "favicon": " https://sms.luode.vip/favicon.ico?v=20260925",
                             "bgColor": "#73272d"
                         }
                     ]
